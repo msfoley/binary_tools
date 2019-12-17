@@ -5,7 +5,7 @@ OBJDIR := $(BUILDDIR)/obj
 BINDIR := $(BUILDDIR)/bin
 
 CC := gcc
-CFLAGS := -g -Wall -I$(INCLUDEDIR)
+CFLAGS := -g -O0 -Wall -I$(INCLUDEDIR)
 LDFLAGS :=
 LDLIBS :=
 

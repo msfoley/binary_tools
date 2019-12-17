@@ -144,8 +144,8 @@ int main(int argc, char **argv) {
                         goto failure;
                     }
 
-                    memcpy(diff->oldbuf, oldbuf + diff->offset, diff->length);
-                    memcpy(diff->newbuf, newbuf + diff->offset, diff->length);
+                    memcpy(diff->oldbuf, oldbuf + diff->offset - offset, diff->length);
+                    memcpy(diff->newbuf, newbuf + diff->offset - offset, diff->length);
 
                     diff_push(&head, diff);
                     diff = NULL;
